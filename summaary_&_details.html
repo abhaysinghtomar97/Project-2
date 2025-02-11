@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary Tag Dropdown</title>
+  <style>
+    details {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      margin: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      max-width: 300px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::marker {
+      content: "  ▼ "; /* Customize the arrow */
+      color: #007bff;
+    }
+
+    details[open] summary::marker {
+      content: "▲ "; /* Change arrow direction */
+    }
+
+    .dropdown-content {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Summary Tag Dropdown Example</h1>
+<details>
+  <summary>Select an Option</summary>
+  <div class="dropdown-content">
+    <p>Option 1: Description here</p>
+    <p>Option 2: Another description</p>
+    <p>Option 3: Yet another description</p>
+  </div>
+</details>
+
+<h1>Unit 1: Introduction to [Subject]</h1>
+
+<details>
+  <summary>Topic 1: Basics of [Subject]</summary>
+  <p>This section covers the fundamental concepts of [Subject], including...</p>
+</details>
+
+<details>
+  <summary>Topic 2: Advanced Concepts</summary>
+  <p>In this topic, we explore advanced topics such as...</p>
+</details>
+
+<details>
+  <summary>Topic 3: Applications</summary>
+  <p>Learn about the practical applications of [Subject] in real-world scenarios...</p>
+</details>
+
+<details>
+  <summary>Topic 4: Summary</summary>
+  <p>This section provides a summary of what was covered in Unit 1...</p>
+</details>
+
+</body>
+</html>

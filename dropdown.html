@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Example</title>
+  <!-- <style>
+    select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select an Option</h1>
+  <form>
+    <label for="dropdown">Choose a category:</label>
+    <select id="dropdown" name="dropdown">
+      <option value="" disabled selected>Select an option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </form>
+
+  <script>
+    // Optional JavaScript to dynamically add data
+    const dropdown = document.getElementById('dropdown');
+
+    // Adding new options dynamically
+    const newOption = document.createElement('option');
+    newOption.value = '4';
+    newOption.text = 'Option 4';
+    dropdown.appendChild(newOption);
+
+    // Log selected option
+    dropdown.addEventListener('change', () => {
+      console.log(`You selected: ${dropdown.value}`);
+    });
+  </script> -->
+
+
+
+<!-- second  -->
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .dropdown-button::after {
+    content: "▼";
+    font-size: 12px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 5px;
+    z-index: 1000;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown.show .dropdown-content {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<h1>Dropdown with Arrow Example</h1>
+<div class="dropdown">
+<button class="dropdown-button">Select Option</button>
+<div class="dropdown-content">
+  <a href="#option1">Option 1</a>
+  <a href="#option2">Option 2</a>
+  <a href="#option3">Option 3</a>
+</div>
+</div>
+
+<script>
+const dropdown = document.querySelector('.dropdown');
+const button = document.querySelector('.dropdown-button');
+
+button.addEventListener('click', () => {
+  dropdown.classList.toggle('show'); // Toggle the dropdown visibility
+});
+
+// Close the dropdown if the user clicks outside of it
+window.addEventListener('click', (e) => {
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove('show');
+  }
+});
+</script>
+
+
+</body>
+</html>
