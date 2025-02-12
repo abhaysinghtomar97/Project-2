@@ -44,37 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // login 
-const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
-};
-
-firebase.initializeApp(firebaseConfig);
-
 function showPopup() {
-    document.getElementById("background").classList.add("blur-bg");
-    document.getElementById("loginPopup").style.display = "block";
+    document.getElementById("loginModal").style.display = "flex";
+    document.querySelector(".wrapper").classList.add("blur-effect");
 }
 
 function closePopup() {
-    document.getElementById("background").classList.remove("blur-bg");
-    document.getElementById("loginPopup").style.display = "none";
-}
-
-function login() {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    
-    firebase.auth().signInWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            alert("Login Successful");
-            closePopup();
-        })
-        .catch((error) => {
-            alert(error.message);
-        });
+    document.getElementById("loginModal").style.display = "none";
+    document.querySelector(".wrapper").classList.remove("blur-effect");
 }

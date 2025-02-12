@@ -17,30 +17,44 @@
 
 
     </script>
-
     <div class="container">
         <!-- navbar  -->
         <nav class="navbar">
             <div class="logo">COLEGUE</div>
+            
+            <div class="wrapper">
+                <a class="login_btn"  href="#" onclick="showPopup() ">Login</a>
+            </div>
             <div class="hamburger" onclick="toggleMenu()">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
+           
             <ol class="nav-links">
                 <li><a class="head_links" href="#home">Home</a></li>
                 <li><a class="head_links" href="#notes">Notes</a></li>
                 <li><a class="head_links" href="about.html">About</a></li>
                 <li><a class="head_links" href="#contact">Contact</a></li>
-                <li>
-                    <a class="login_btn" onclick="showPopup() " href="login_test.html">Login</a>
-                </li>
+                
             </ol>
         </nav>
-
+    
         <!-- login page  -->
-
+        <!-- Login Popup Modal/form -->
         
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>Login</h2>
+                <form onsubmit="return false">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button class="submit-btn">Login</button>
+            </form>
+            </div>
+        </div>
+    
         
         <!-- searchbar -->
         <div class="breadcrumb">
@@ -368,8 +382,9 @@
 
 
         </div>
-
+        
     </div>
+
 </body>
 
 </html>
