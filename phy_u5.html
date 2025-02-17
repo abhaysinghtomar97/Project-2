@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit 1</title>
+    <title>1: Superconductors and Nano-Materials</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
@@ -15,9 +15,9 @@
         <nav class="navbar">
             <div class="logo">COLEGUE</div>
             <div class="wrapper">
-                <a class="login_btn"  href="#" onclick="showPopup() ">Login</a>
+                <a class="login_btn" href="#" onclick="showPopup() ">Login</a>
             </div>
-            <div class="hamburger" onclick="toggleMenu()" >
+            <div class="hamburger" onclick="toggleMenu()">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -29,69 +29,130 @@
                 <li><a class="head_links" href="#contact">Contact</a></li>
             </ol>
         </nav>
-         <!-- login page  -->
+        <!-- login page  -->
         <!-- Login Popup Modal/form -->
-        
+
         <div id="loginModal" class="modal">
             <div class="modal-content">
                 <span class="close-btn" onclick="closePopup()">&times;</span>
                 <h2>Login</h2>
                 <form onsubmit="return false">
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <button class="submit-btn">Login</button>
-            </form>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button class="submit-btn">Login</button>
+                </form>
             </div>
         </div>
         <!-- searchbar -->
         <div class="breadcrumb">
-            
+
         </div>
         <input type="text" class="search" id="search-bar" placeholder="Search for a topic..." oninput="searchNotes()" />
         <div class="main" onclick="mine()">
-            <h2>UNIT 1: Introduction to Semiconductors</h2>
+            <h2>UNIT 5: Superconductors and Nano-Materials</h2>
 
             <!-- topics -->
             <div class="topics">
 
                 <!-- topic --basics -->
                 <details>
-                    <summary>Basics</summary>
+                    <summary>Superconductors</summary>
                     <div class="dropdown-content">
-                        <h4>Semiconductors</h4>
+                        <h4>Super Conductivity</h4>
 
-                        <!-- audio  -->
-                        <audio controls>
-                            <source src="audio/hindi-motion.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
+                        <p>The Sudden disappearence in the electrical resistance of a material at or below certain
+                            temrature is called SuperConductivity.</p>
+                        <p>The material which exhibits this property is called Super Conductor.</p>
+                        <p><b>Ex:</b>Murcury,Lead and Tin</p>
+                        <h4>Critical Temprature or Transition Temprature<b>(Tc)</b></h4>
+                        <p>It is a temprature at which transition from normal to super conducting state and resistivity
+                            of material suddenly drop.</p>
+                        <i>Temprature Dependence of electrical resistivity of super Conductors</i>
 
-                        <p>A Material Whose Conductivity Lies B/w Conductor and Insulator.</p>
+                        <img src=" https://th.bing.com/th/id/R.da2cef0da1881901e46de69b6b22de01?rik=TjvffzkI2IkISg&riu=http%3a%2f%2fusers.highland.edu%2f~jsullivan%2fprinciples-of-general-chemistry-v1.0%2fsection_16%2fda2cef0da1881901e46de69b6b22de01.jpg&ehk=50GHSuo%2bvdyJBmbi9Yifo9PlDwBPA%2bbOtR8SEaAkfII%3d&risl=&pid=ImgRaw&r=0 "
+                            alt="graph" width="300px" height="300px">
+
+                        <p>When normal conductors cooled down their electrical resistivity decreases as a fucntion of
+                            temprature because at lower temprature atomic vibration are less and conduction electrons
+                            move. however, at the absolute temprature(t=o) the resistivity is NOT 0(zero).Hence this is
+                            non-zero value of electrical resistivity at T=0 is called <b>Residual</b>. </p>
+                        <p>
+                            On other hand, When superconductors cooled down their electrical resistivity decreases in
+                            the same way as normal conductors and suddenly drops to zero at a certain temprature called
+                            <b>Critical Temprature</b>or <b>Transition Temprature</b>and material passes into the
+                            superconducting state from normal state.
+                        </p>
+                        <h4>Temprature Dependence of Critical Temprature(Tc)</h4>
+                        <p>
+                            If superconducting material placed in external magnetic field , its superconducting state
+                            decided by the critical magnetic field(Hc) and critical temprature(Tc) For Each and Every
+                            temprature their Critical Temp(Tc) exsist a critical field which could distroy
+                            superconducting state of material.
+                        </p>
+                        <p>
+                            The minimum value applied magnetic field at which material looses its superconductivity is
+                            called <b>Critical Field(Hc)</b>.
+                            <img src="https://image.slidesharecdn.com/superconductivity-161105062412/95/superconductivity-7-638.jpg?cb=1478327089"
+                                alt="graph" width="300px" height="300px">
 
 
-                        <p>Option 2: Another description</p>
-                        <p>Option 3: Yet another description</p>
+
                     </div>
                 </details>
 
                 <!-- topic 1  -->
                 <details>
-                    <summary>Semiconductor Diode</summary>
+                    <summary>Critical Current (Ic) / Critical Current Density(Jc) / Persistant Current</summary>
                     <div class="dropdown-content">
-                        <p>Option 1: Description here</p>
-                        <p>Option 2: Another description</p>
-                        <p>Option 3: Yet another description</p>
+                        <h4>Critical Current (Ic)</h4>
+                        <p>It is a Maximun current which can flow through the superconducting wire without lossing it's
+                            conductivity.</p>
+
+                        <h4>Critical Current Density(Jc)</h4>
+                        <p>Critial current Per unit area.</p>
+                        <img src="https://image.slidesharecdn.com/superconductivity-161105062412/95/superconductivity-8-638.jpg?cb=1478327089"
+                            alt="derivation" width="300px" height="300px">
+
+
+                        <h4>
+                            Persistant Current
+                        </h4>
+                        <p>
+                            <li>If the Dc is setup in a Superconductor it can persist for a long time without applied
+                                any EMF.</li>
+                            <li>A current can be induced in a ring of a superconducting material by pulling it in
+                                magnetic field below Critical Temprature(Tc) and the switchig off the fild.</li>
+                            <Ii>When we switchoff the field the magnetic fluxoutside the ring disappears but the flux
+                                inside the ring trapped this causes persistent current and it remains for a definite
+                                time period.</Ii>
+                        </p>
+                        <img src="persistant_current.png" alt="fig.." width="300px" height="200px">
                     </div>
                 </details>
 
                 <!-- t2 -->
                 <details>
-                    <summary>Diode Application</summary>
+                    <summary>Meissner Effect</summary>
                     <div class="dropdown-content">
+                        <p>The Phenomenon of exclusion of magnetic Field lines of foreces from the intier bulk of
+                            supercondictor when they are cooled below crtitical temprature(Tc) in an External Magnetic
+                            Field called Meissner Effect.</p>
+                        <img src="https://slideplayer.com/slide/14575766/90/images/2/The+Meissner+Effect.jpg"
+                            alt="fig.." width="300px" height="200px">
+                        <p><i>The material shows Magnetic effect in its superconducting state only.</i>
+                        </p>
+                        <p>When superconductor placed in external magnetic field and cooled below Tc , Magnetic flux id
+                            pushed out. Hence, Magnetic Induction is zero inside the material.
 
-                        <p>Option 1: Description here</p>
-                        <p>Option 2: Another description</p>
-                        <p>Option 3: Yet another description</p>
+                        </p>
+                        <p>If M is intensity of magnetization field in external field H, then using relation: </p>
+                        <p>B=μ0(H+M) </p>
+                        <p>As B=0 inside the material, then M=-H </p>
+                        <p>M/H=-1 ,<b>Magnetic Succesptibility</b></p>
+                        <p>It shows that superconductors in its superconductong state are perfect diamagnetic materials.
+                        </p>
+
+
                     </div>
                 </details>
 
@@ -99,20 +160,178 @@
 
                 <!-- t4 -->
                 <details>
-                    <summary>Select an Option</summary>
+                    <summary>Types of Superconductor</summary>
                     <div class="dropdown-content">
-                        <p>Option 1: Description here</p>
-                        <p>Option 2: Another description</p>
-                        <p>Option 3: Yet another description</p>
+                        <h4>Type 1 Superconductor</h4>
+                        <p>The supercondictor which exhibits complete Meissner effect or which never allows Magnetic
+                            Flux density inside super conductors in superconducting state are <b>Type 1</b>or <b>Soft
+                                Superconductor.</b>
+                        <p><b>Ex:</b>Tin,Lead and Alemunium.</p>
+                        <img src="type_1_superc...png" alt="graph" width="300px" height="250px">
+                        <p>In given fig. transition from Superconducting state to normal state occurs shaeply at
+                            critical field Hc. Upto Hc Magnetisation Increases <i>Linealy</i> with external field H and
+                            material is perfectly Diamagnetic. Hence, Shows Compelte Meissner Effect.
+                            At Hc Magnetisation drops zero and Material passes into normal state.</p>
+
+                        <h4>Properties Of TYPE 1</h4>
+                        <li>
+                            Complete expulsion of magnetic fields (Meissner effect) when cooled below their critical
+                            temperature.
+                        </li>
+                        <li>Zero electrical resistance at low temperatures, allowing for unimpeded electron flow. </li>
+                        <li>Sharp Transition – Sudden drop in resistance to zero at Tc.</li>
+                        <li>They are called Soft SC so very small field is required to destroy their conductivity.</li>
+                        <li>Follows BCS Theory – Explained by the Bardeen-Cooper-Schrieffer (BCS) theory.</li>
+                        <li>Low Critical Temperature (Tc) – Usually below 10 K.</li>
+
+                        <h4>Type 2 Superconductor</h4>
+                        "The Superconductors in which material looses its magnetisation gradually rather than suddenly"
+                        are <b>Termends</b> or <b>Type 2/ Hard SC.</b>
+                        <p>They Don't shows meissner's effect.</p>
+                        <p><b>Ex:</b> Transition Metals & allows containing Molybdneium,Silicon and Vanadium.</p>
+                        <img src="type_2_super...png" width="300px" height="250px">
+                        <ul>
+                            <li>The <strong>lower critical field (Hc1)</strong> marks the point where the magnetic field
+                                starts penetrating.</li>
+                            <li>Between <strong>Hc1 and Hc2</strong>, magnetization reduces gradually due to a
+                                <strong>complicated mixed structure</strong> where vortices form.
+                            </li>
+                            <li>Above <strong>Hc2</strong>, superconductivity is lost, and magnetization
+                                <strong>vanishes completely</strong>.
+                            </li>
+                        </ul>
+                        <h4>Properties of TYPE 2 SC</h4>
+                        <ul>
+                            <li><strong>Higher Critical Temperature (Tc):</strong> Typically above 10 K, some even
+                                exceeding 100 K.</li>
+                            <li><strong>Partial Magnetic Field Penetration:</strong> Forms a vortex state instead of
+                                complete field expulsion.</li>
+                            <li><strong>Gradual Transition:</strong> Resistance decreases gradually instead of a sharp
+                                drop.</li>
+                            <li><strong>Hard Superconductors:</strong> Can sustain strong magnetic fields without losing
+                                superconductivity.</li>
+                            <li><strong>High Critical Magnetic Fields:</strong> Defined by two critical fields (Hc1 and
+                                Hc2).</li>
+                            <li><strong>Used in Advanced Applications:</strong> Found in MRI machines, particle
+                                accelerators, and power grids.</li>
+                            <li><strong>Composed of Alloys and Complex Materials:</strong> Includes materials like
+                                niobium-titanium (NbTi) and YBCO.</li>
+                        </ul>
+
+
+
+
                     </div>
                 </details>
                 <!-- t5 -->
                 <details>
-                    <summary>Select an Option</summary>
+                    <summary>Properties of Superconductor</summary>
                     <div class="dropdown-content">
-                        <p>Option 1: Description here</p>
-                        <p>Option 2: Another description</p>
-                        <p>Option 3: Yet another description</p>
+                        <p>Superconductors exhibit unique properties when cooled below a critical temperature (Tc).
+                            These properties make them highly useful in various applications.</p>
+
+                        <h4>Key Properties:</h4>
+                        <ul>
+                            <li><strong>Zero Electrical Resistance:</strong> Superconductors allow electric current to
+                                flow without any resistance, leading to zero power loss.</li>
+                            <li><strong>Meissner Effect (Perfect Diamagnetism):</strong> Expels external magnetic
+                                fields, making superconductors perfect diamagnets.</li>
+                            <li><strong>Critical Temperature (Tc):</strong> The temperature below which a material
+                                becomes superconducting.</li>
+                            <li><strong>Critical Magnetic Field (Hc):</strong> The maximum magnetic field a
+                                superconductor can withstand before losing superconductivity.</li>
+                            <li><strong>London Penetration Depth:</strong> Describes how far a magnetic field can
+                                penetrate into a superconductor.</li>
+                            <li><strong>Cooper Pairs:</strong> Electrons pair up to form Cooper pairs, allowing smooth
+                                flow of current.</li>
+                            <li><strong>Josephson Effect:</strong> Superconductors allow tunneling of Cooper pairs
+                                across an insulating barrier, leading to applications in quantum computing.</li>
+                            <li><strong>Energy Gap:</strong> A minimum energy is required to break Cooper pairs,
+                                contributing to stability.</li>
+                        </ul>
+                    </div>
+                </details>
+                <!-- t6 -->
+                <details>
+                    <summary>London Penetraton Depth</summary>
+                    <div class="dropdown-content">
+                        <p>The <strong>London Penetration Depth (λ)</strong> is the distance inside a superconductor
+                            where an external magnetic field decays exponentially(1/e) times of field at the surafce. It
+                            is given by:</p>
+
+                        <p><strong>Formula:</strong> λ = √(m / (μ₀ n e²))</p>
+
+                        <ul>
+                            <li><strong>Symbol:</strong> λ (lambda)</li>
+                            <li><strong>Represents:</strong> The depth to which the magnetic field can penetrate inside
+                                a superconductor.</li>
+                            <li><strong>Exponential Decay:</strong> Magnetic field decreases as <em>B(x) = B₀
+                                    e^(-x/λ)</em>.</li>
+                            <li><strong>Depends on:</strong> Electron mass (m), charge (e), number density (n), and
+                                permeability (μ₀).</li>
+                            <li><strong>Shorter λ:</strong> Indicates stronger superconducting properties.</li>
+                            <li><strong>Type 1 vs. Type 2:</strong> Type 1 superconductors have shorter λ, while Type 2
+                                superconductors have longer λ.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- t7 -->
+                <details>
+                    <summary> HTSC (High temp Superconductors)</summary>
+                    <div class="dropdown-content">
+                        <p><strong>High-Temperature Superconductors (HTSC)</strong> are materials that exhibit
+                            superconductivity at relatively high temperatures, typically above 77 K (liquid nitrogen
+                            temperature). They are mainly ceramic compounds containing copper-oxide (cuprates).</p>
+
+                        <h4>Properties of HTSC:</h4>
+                        <ul>
+                            <li><strong>High Critical Temperature (Tc):</strong> Superconductivity occurs at
+                                temperatures above 77 K, some even exceeding 130 K.</li>
+                            <li><strong>Ceramic Nature:</strong> Unlike traditional superconductors, HTSC materials are
+                                brittle and non-metallic.</li>
+                            <li><strong>Layered Structure:</strong> Consists of alternating layers of copper-oxide
+                                (CuO₂) planes and other elements.</li>
+                            <li><strong>Type 2 Superconductors:</strong> Exhibits a mixed state (vortex state) allowing
+                                partial magnetic field penetration.</li>
+                            <li><strong>Large London Penetration Depth:</strong> Due to low electron density, the
+                                magnetic field penetrates deeper.</li>
+                            <li><strong>Application in Power Grids:</strong> Used in superconducting power cables, fault
+                                current limiters, and maglev trains.</li>
+                            <li><strong>Common Materials:</strong> Examples include YBCO (Yttrium Barium Copper Oxide)
+                                and BSCCO (Bismuth Strontium Calcium Copper Oxide).</li>
+                        </ul>
+                    </div>
+
+                </details>
+
+                <!-- t8 -->
+                <details>
+                    <summary>Applications Of Superconductors</summary>
+                    <div class="dropdown-content">
+                        <p>Superconductors have a wide range of applications due to their ability to conduct electricity
+                            without resistance. Below are some key applications:</p>
+
+                        <h4>Major Applications:</h4><br>
+                        <ul>
+                            <li><strong>Magnetic Levitation (Maglev Trains):</strong> Superconducting magnets create
+                                frictionless, high-speed trains.</li>
+                            <li><strong>Medical Imaging (MRI & NMR):</strong> Used in Magnetic Resonance Imaging (MRI)
+                                and Nuclear Magnetic Resonance (NMR) machines for detailed imaging.</li>
+                            <li><strong>Particle Accelerators:</strong> Superconducting magnets guide and accelerate
+                                particles in facilities like the Large Hadron Collider (LHC).</li>
+                            <li><strong>Power Grids:</strong> Superconducting cables and transformers reduce energy loss
+                                in electrical grids.</li>
+                            <li><strong>Quantum Computing:</strong> Superconducting circuits are used to build quantum
+                                computers for ultra-fast computing.</li>
+                            <li><strong>Superconducting Sensors (SQUIDs):</strong> Highly sensitive devices used for
+                                detecting extremely weak magnetic fields.</li>
+                            <li><strong>Fusion Reactors:</strong> Used in Tokamak reactors for generating powerful
+                                magnetic fields to contain plasma.</li>
+                            <li><strong>Military & Defense:</strong> Superconductors enhance radar, communication
+                                systems, and electromagnetic weapons.</li>
+                        </ul>
+
                     </div>
                 </details>
             </div>

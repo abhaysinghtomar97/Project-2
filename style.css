@@ -108,6 +108,7 @@ h2,h4 {
     grid-template-columns: repeat(4, 1fr);
     color: #0c0c0c;
     gap: 20px;
+    
 }
 
 .subject{
@@ -119,13 +120,29 @@ h2,h4 {
     text-align: center;
     border-radius: 20px;
     box-shadow: 1px 1px;
-    
+    text-align-last: center;    
     
 }
+
+/* cards hover effect  */
 .subject:hover, details:hover {
     box-shadow: 1px 1px 20px #1976D2;
 
 }
+.physics:hover{
+    box-shadow: 1px 1px 20px #9C27B0;
+}
+.maths:hover{
+    box-shadow: 1px 1px 20px #388E3C;
+}
+.evs:hover{
+    box-shadow: 1px 1px 20px #00796B;
+}
+.mechanics:hover{
+    box-shadow: 1px 1px 20px #F57C00;
+}
+
+
 .electronics {
     border-color: #1976D2;
     border-style: solid; /* Make sure there's a border style */
@@ -133,12 +150,14 @@ h2,h4 {
     text-align: right;
 
 }
-.physics {
+.physics{
     border-color: #9C27B0;
     border-style: solid; /* Make sure there's a border style */
     border-width: 2px; /* Set the border width */
     text-align: right;
+
 }
+
 .maths{
     border-color: #388E3C;
     border-style: solid; /* Make sure there's a border style */
@@ -439,4 +458,58 @@ input {
 /* Wrapper to apply blur */
 .wrapper {
     transition: filter 0.3s ease-in-out;
+}
+
+/* contact and about styles  */
+#about {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+details {
+    margin: 20px 0;
+}
+
+details summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
 }

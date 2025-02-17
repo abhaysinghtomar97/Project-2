@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>About</title>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,7 @@
     <body class="body"  onscroll="mine(), closePopup()" >
     
     
-       
+
         <div class="container" >
             <!-- navbar  -->
             <nav class="navbar">
@@ -28,10 +27,10 @@
                 </div>
                
                 <ol class="nav-links">
-                    <li><a class="head_links" href="index.html">Home</a></li>
+                    <li><a class="head_links" href="#home">Home</a></li>
                     <li><a class="head_links" href="#notes">Notes</a></li>
                     <li><a class="head_links" href="about.html">About</a></li>
-                    <li><a class="head_links" href="contact.html">Contact</a></li>
+                    <li><a class="head_links" href="#contact">Contact</a></li>
                     
                 </ol>
             </nav>
@@ -67,26 +66,25 @@
     
             <!-- main contant  -->
             <div class="main" onclick="mine()" >
-    
-        <!-- About Section -->
-        <section id="about">
-            <h1>About COLLEGUE</h1>
-            <p>Welcome to COLEGUE, a platform dedicated to providing all B.Tech students a space to upload, share, and access semester-wise notes in both Hindi and English audio. Our main goal is to make learning easy and interactive by giving students an opportunity to engage with study materials in a personalized format.</p>
-    
-            <!-- Interactive Features -->
-            <details>
-                <summary>Our Mission</summary>
-                <p>Our mission is to create a supportive environment for students where they can find easily accessible, understandable, and high-quality learning resources. We aim to build a community where students can contribute and learn from each other, all while boosting their academic performance.</p>
-            </details>
-    
-            <details>
-                <summary>Why COLLEGUE?</summary>
-                <p>COLEGUE is designed with the student's needs in mind. Unlike traditional textbooks or lecture notes, our platform allows for a more interactive approach by offering notes in both text and audio formats, making it easier for students to grasp complex concepts at their own pace.</p>
-            </details>
-            
-            
-        </section>
+             
+                <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
             </div>
-    </body>
-    </html>
     
+</body>
+</html>
