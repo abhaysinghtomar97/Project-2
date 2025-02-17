@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onscroll="mine()">
+    <div class="container">
+        <!-- navbar  -->
+        <nav class="navbar">
+            <div class="logo">COLEGUE</div>
+            <div class="wrapper">
+                <a class="login_btn"  href="#" onclick="showPopup() ">Login</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()" >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ol class="nav-links">
+                <li><a class="head_links" href="#home">Home</a></li>
+                <li><a class="head_links" href="#notes">Notes</a></li>
+                <li><a class="head_links" href="#about">About</a></li>
+                <li><a class="head_links" href="#contact">Contact</a></li>
+            </ol>
+        </nav>
+         <!-- login page  -->
+        <!-- Login Popup Modal/form -->
+        
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>Login</h2>
+                <form onsubmit="return false">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button class="submit-btn">Login</button>
+            </form>
+            </div>
+        </div>
+        <!-- searchbar -->
+        <div class="breadcrumb">
+            
+        </div>
+        <input type="text" class="search" id="search-bar" placeholder="Search for a topic..." oninput="searchNotes()" />
+        <div class="main" onclick="mine()">
+            <h2>UNIT 1: Introduction to Semiconductors</h2>
+
+            <!-- topics -->
+            <div class="topics">
+
+                <!-- topic --basics -->
+                <details>
+                    <summary>Basics</summary>
+                    <div class="dropdown-content">
+                        <h4>Semiconductors</h4>
+
+                        <!-- audio  -->
+                        <audio controls>
+                            <source src="audio/hindi-motion.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+
+                        <p>A Material Whose Conductivity Lies B/w Conductor and Insulator.</p>
+
+
+                        <p>Option 2: Another description</p>
+                        <p>Option 3: Yet another description</p>
+                    </div>
+                </details>
+
+                <!-- topic 1  -->
+                <details>
+                    <summary>Semiconductor Diode</summary>
+                    <div class="dropdown-content">
+                        <p>Option 1: Description here</p>
+                        <p>Option 2: Another description</p>
+                        <p>Option 3: Yet another description</p>
+                    </div>
+                </details>
+
+                <!-- t2 -->
+                <details>
+                    <summary>Diode Application</summary>
+                    <div class="dropdown-content">
+
+                        <p>Option 1: Description here</p>
+                        <p>Option 2: Another description</p>
+                        <p>Option 3: Yet another description</p>
+                    </div>
+                </details>
+
+
+
+                <!-- t4 -->
+                <details>
+                    <summary>Select an Option</summary>
+                    <div class="dropdown-content">
+                        <p>Option 1: Description here</p>
+                        <p>Option 2: Another description</p>
+                        <p>Option 3: Yet another description</p>
+                    </div>
+                </details>
+                <!-- t5 -->
+                <details>
+                    <summary>Select an Option</summary>
+                    <div class="dropdown-content">
+                        <p>Option 1: Description here</p>
+                        <p>Option 2: Another description</p>
+                        <p>Option 3: Yet another description</p>
+                    </div>
+                </details>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

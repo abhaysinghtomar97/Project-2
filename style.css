@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    ;
 }
 
 .container {
@@ -10,7 +11,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f4f4f4;
+    background: #F9F9F9;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -18,7 +19,7 @@ body {
 }
 
 nav {
-    background-color: #2a9d8f;
+    background-color: #1B5E20;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,8 +84,8 @@ nav ol li  .head_links:hover {
 }
 
 .main {
-    background-color: rgb(173, 210, 135);
-
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px rgb(3, 26, 139);
     border-radius: 20px;
     padding: 20px;
 }
@@ -97,7 +98,7 @@ h2,h4 {
     
 }
 .main h2{
-   background-color: #ffffff;
+   background-color: #fffffffd;
    border-radius: 10px 0  10px  0;
 }
 
@@ -105,22 +106,64 @@ h2,h4 {
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
+    color: #0c0c0c;
     gap: 20px;
 }
 
-.subject {
-    background-color: #e7f5f6;
-    padding: 25px;
+.subject{
+    background-color: #D0E1F9;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
     text-align: center;
     border-radius: 20px;
     box-shadow: 1px 1px;
+    
+    
 }
-
 .subject:hover, details:hover {
-    box-shadow: 1px 1px 20px rgb(3, 26, 139);
+    box-shadow: 1px 1px 20px #1976D2;
 
 }
+.electronics {
+    border-color: #1976D2;
+    border-style: solid; /* Make sure there's a border style */
+    border-width: 2px; /* Set the border width */
+    text-align: right;
+
+}
+.physics {
+    border-color: #9C27B0;
+    border-style: solid; /* Make sure there's a border style */
+    border-width: 2px; /* Set the border width */
+    text-align: right;
+}
+.maths{
+    border-color: #388E3C;
+    border-style: solid; /* Make sure there's a border style */
+    border-width: 2px; /* Set the border width */
+    text-align: right;
+}
+.evs{
+    border-color:#00796B;
+    border-style: solid; /* Make sure there's a border style */
+    border-width: 2px; /* Set the border width */
+    text-align: right;
+}
+.mechanics{
+    border-color: #F57C00;
+    border-style: solid; /* Make sure there's a border style */
+    border-width: 2px; /* Set the border width */
+    text-align: right;
+}
+
+ol.units a{
+    margin: 20px;
+    /* text-decoration: none; */
+    color: #0D47A1;
+}
+
 details {
     background-color: #ffffff;
     font-family: Arial, sans-serif;
@@ -133,6 +176,7 @@ details {
     max-width:fit-content;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+  
 
   summary {
     font-weight: bold;
@@ -301,7 +345,7 @@ p span{
     font-size: 1rem;
     transition: background-color 0.3s;
     text-decoration: none;
-    margin-left: 90%;
+    /* margin-left: 90%; */
 
 }
 .login_btn:hover {
