@@ -56,3 +56,9 @@ function closePopup() {
     document.getElementById("loginModal").style.display = "none";
     document.querySelector(".wrapper").classList.remove("blur-effect");
 }
+// Hiding inspect option in browser
+document.addEventListener("contextmenu", (event) => {
+    alert("Right-click is disabled to protect content!");
+    event.preventDefault();
+});
+

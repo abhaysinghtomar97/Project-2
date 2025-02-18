@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Mode</title>
+    <link rel="icon" href="icon_collegue.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onscroll="mine()">
+    <div class="container">
+        <!-- navbar  -->
+        <nav class="navbar">
+            <div class="logo"> <img src="icon_collegue.jpg" height="20px"> COLLEGUE</div>
+            <div class="wrapper">
+                <a class="login_btn"  href="#" onclick="showPopup() ">Login</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()" >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ol class="nav-links">
+                <li><a class="head_links" href="index.html">Home</a></li>
+                <li><a class="head_links" href="notes.html">Notes</a></li>
+                <li><a class="head_links" href="about.html">About</a></li>
+                <li><a class="head_links" href="contact.html">Contact</a></li>
+            </ol>
+        </nav>
+         <!-- login page  -->
+        <!-- Login Popup Modal/form -->
+        
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>Login</h2>
+                <form onsubmit="return false">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button class="submit-btn">Login</button>
+            </form>
+            </div>
+        </div>
+        <!-- searchbar -->
+        <div class="breadcrumb">
+            
+        </div>
+        <input type="text" class="search" id="search-bar" placeholder="Search for a topic..." oninput="searchNotes()" />
+        <div class="main" onclick="mine()">
+            <h2>Exam Mode</h2>
+
+            <!-- topics -->
+            
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

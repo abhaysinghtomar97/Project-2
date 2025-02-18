@@ -513,3 +513,9 @@ details summary {
 .contact-form button:hover {
     background-color: #45a049;
 }
+.coming_soon{
+    vertical-align: middle; /* Aligns the image with the text */
+    margin-left: 5px; /* Adds space between the image and the text */
+   width: 70px;
+
+}
