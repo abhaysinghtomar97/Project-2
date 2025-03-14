@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center; */
     height: 100vh;
+    /* position: relative; */
 }
 
 nav {
@@ -25,6 +26,12 @@ nav {
     align-items: center;
     padding: 10px 20px;
     color: #fff;
+    position:static;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
     
 }
 
@@ -245,7 +252,8 @@ p span{
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    z-index: 100;}
+    
+    }
 
 .hamburger div {
     width: 100%;
@@ -325,6 +333,7 @@ p span{
     padding: 12px 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
 }
 
 /* Breadcrumb Links */
@@ -490,6 +499,16 @@ details summary {
     padding: 20px;
     border-radius: 8px;
     margin-top: 40px;
+    }
+    
+.contact-form {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    max-width: 600px; /* Limit the width for larger screens */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-form input,
@@ -499,6 +518,7 @@ details summary {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 .contact-form button {
@@ -508,14 +528,24 @@ details summary {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%; /* Make the button full width */
 }
 
 .contact-form button:hover {
     background-color: #45a049;
 }
-.coming_soon{
-    vertical-align: middle; /* Aligns the image with the text */
-    margin-left: 5px; /* Adds space between the image and the text */
-   width: 70px;
 
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+    }
+
+    .contact-form button {
+        padding: 8px 16px;
+    }
 }

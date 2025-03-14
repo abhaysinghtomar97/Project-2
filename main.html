@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLEGUE - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <style>
+        /* === Global Styles === */
+        * {
+            /* margin: 0; */
+            /* padding: 0; */
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            max-width: 100%;
+            box-sizing: border-box;
+            /* Prevents unexpected stretching */
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+            /* Prevents horizontal scrolling */
+
+        }
+
+        /* === Body Styling === */
+        body {
+            /* margin: 0; */
+            /* padding: 0; */
+            /* position: absolute; */
+            font-family: Arial, sans-serif;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* === Navigation Bar === */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #5146e1;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0px 4px 8px rgb(0, 0, 0);
+            z-index: 1000;
+
+
+        }
+
+        .navbar .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            height: 100vh;
+            max-height: fit-content;
+            max-width: 100%;
+            height: auto;
+
+        }
+
+        /* === Hero Section === */
+        .hero {
+            margin-top: 20px;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            background: url('banner.webp') no-repeat center;
+            background-size: cover;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            margin-top: 0px;
+            background: url('banner.webp') no-repeat center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.725);
+            /* Adjust opacity here */
+            z-index: 1;
+        }
+
+        .hero h1,
+        .hero p,
+        .hero .cta-btn {
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 0 10px #ffcc00;
+            /* Text glow effect */
+        }
+
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero .cta-btn {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            background: #ffcc00;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero .cta-btn:hover {
+            background: white;
+            color: #007bff;
+        }
+
+        /* === Features Section === */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            text-align: center;
+            padding: 50px 5%;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.285);
+            width: 30%;
+            transition: 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-box i {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .feature-box h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        /* === Footer === */
+        .footer {
+            text-align: center;
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* === Creative Span Styling === */
+        span {
+            color: #ffcc00;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 0 10px #000000;
+        }
+    </style>
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">COLLEGUE</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Welcome to COLLEGUE</h1>
+            <p>Your ultimate platform for <span>B.Tech </span> study materials</p>
+            <button class="cta-btn">Explore Now</button>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-box">
+                <i class="fas fa-book"></i>
+                <h3>Semester Notes</h3>
+                <p>Get easy access to semester-wise notes.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-headphones"></i>
+                <h3>Audio Explanations</h3>
+                <p>Learn with Hindi & English audio guides.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-code"></i>
+                <h3>Project Help</h3>
+                <p>Access guides for your B.Tech projects.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-code"></i>
+                <h3>Exam Mode</h3>
+                <p>Access guides for your B.Tech projects.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-code"></i>
+                <h3>Video Lecture</h3>
+                <p>Access guides for your B.Tech projects.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            &copy; 2025 COLLEGUE | All Rights Reserved
+        </footer>
+    </div>
+
+</body>
+
+</html>
